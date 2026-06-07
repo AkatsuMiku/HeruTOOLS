@@ -1,0 +1,11 @@
+# Xcode
+build/
+*.xcuserstate
+*.xcuserdatad
+DerivedData/
+
+# macOS
+.DS_Store
+
+# Temporary scratch folder
+scratch/

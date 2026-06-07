@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000012C12D40000000001 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000012C12D40000000001 /* Color+Hex.swift */; };
+		B10000022C12D40000000002 /* Array+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000022C12D40000000002 /* Array+Extend.swift */; };
+		B10000032C12D40000000003 /* CleanerMainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000032C12D40000000003 /* CleanerMainVM.swift */; };
+		B10000042C12D40000000004 /* RAMTabVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000042C12D40000000004 /* RAMTabVM.swift */; };
+		B10000052C12D40000000005 /* LargeFilesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000052C12D40000000005 /* LargeFilesVM.swift */; };
+		B10000062C12D40000000006 /* Physical3DButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000062C12D40000000006 /* Physical3DButtonStyle.swift */; };
+		B10000072C12D40000000007 /* CustomSubTabPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000072C12D40000000007 /* CustomSubTabPicker.swift */; };
+		B10000082C12D40000000008 /* SpecularTubeOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000082C12D40000000008 /* SpecularTubeOverlay.swift */; };
+		B10000092C12D40000000009 /* PulsingPressureDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000092C12D40000000009 /* PulsingPressureDot.swift */; };
+		B100000A2C12D4000000000A /* RadarScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000A2C12D4000000000A /* RadarScannerView.swift */; };
+		B100000B2C12D4000000000B /* CleanerMainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000B2C12D4000000000B /* CleanerMainTab.swift */; };
+		B100000C2C12D4000000000C /* CleanCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000C2C12D4000000000C /* CleanCategoryRow.swift */; };
+		B100000D2C12D4000000000D /* RAMTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000D2C12D4000000000D /* RAMTab.swift */; };
+		B100000E2C12D4000000000E /* LargeFilesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000E2C12D4000000000E /* LargeFilesTab.swift */; };
+		B100000F2C12D4000000000F /* LargeFileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000F2C12D4000000000F /* LargeFileRow.swift */; };
+		B10000102C12D40000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00000102C12D40000000010 /* Assets.xcassets */; };
+		A00000012C12D40000000001 /* HeruToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000012C12D40000000000 /* HeruToolsApp.swift */; };
+		A00000032C12D40000000003 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000032C12D40000000002 /* AppState.swift */; };
+		A00000052C12D40000000005 /* TaskState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000052C12D40000000004 /* TaskState.swift */; };
+		A00000072C12D40000000007 /* DiscordPatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000072C12D40000000006 /* DiscordPatcher.swift */; };
+		A00000092C12D40000000009 /* PythonRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000092C12D40000000008 /* PythonRunner.swift */; };
+		A000000B2C12D4000000000B /* SpicetifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000000B2C12D4000000000A /* SpicetifyService.swift */; };
+		A000000D2C12D4000000000D /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000000D2C12D4000000000C /* LoginService.swift */; };
+		A000000F2C12D4000000000F /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000000F2C12D4000000000E /* PopoverViewController.swift */; };
+		A00000112C12D40000000011 /* MainPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000112C12D40000000010 /* MainPopoverView.swift */; };
+		A00000132C12D40000000013 /* DiscordFixCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000132C12D40000000012 /* DiscordFixCard.swift */; };
+		A00000152C12D40000000015 /* RifeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000152C12D40000000014 /* RifeCard.swift */; };
+		A00000172C12D40000000017 /* CompressorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000172C12D40000000016 /* CompressorCard.swift */; };
+		A00000192C12D40000000019 /* SpicetifyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000192C12D40000000018 /* SpicetifyCard.swift */; };
+
+		A00000442C12D40000000044 /* AestheticGroupBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000452C12D40000000045 /* AestheticGroupBoxStyle.swift */; };
+		A00000462C12D40000000046 /* MacCleanerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000472C12D40000000047 /* MacCleanerService.swift */; };
+		A00000482C12D40000000048 /* CleanerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000492C12D40000000049 /* CleanerCard.swift */; };
+		A00000212C12D40000000021 /* DiscordPatch.py in Resources */ = {isa = PBXBuildFile; fileRef = A00000212C12D40000000020 /* DiscordPatch.py */; };
+		A00000232C12D40000000023 /* RIFEWrapper.py in Resources */ = {isa = PBXBuildFile; fileRef = A00000232C12D40000000022 /* RIFEWrapper.py */; };
+		A00000252C12D40000000025 /* FFmpegWrapper.py in Resources */ = {isa = PBXBuildFile; fileRef = A00000252C12D40000000024 /* FFmpegWrapper.py */; };
+		A00000272C12D40000000027 /* SpicetifyMgr.py in Resources */ = {isa = PBXBuildFile; fileRef = A00000272C12D40000000026 /* SpicetifyMgr.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B00000012C12D40000000001 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		B00000022C12D40000000002 /* Array+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extend.swift"; sourceTree = "<group>"; };
+		B00000032C12D40000000003 /* CleanerMainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerMainVM.swift; sourceTree = "<group>"; };
+		B00000042C12D40000000004 /* RAMTabVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMTabVM.swift; sourceTree = "<group>"; };
+		B00000052C12D40000000005 /* LargeFilesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFilesVM.swift; sourceTree = "<group>"; };
+		B00000062C12D40000000006 /* Physical3DButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physical3DButtonStyle.swift; sourceTree = "<group>"; };
+		B00000072C12D40000000007 /* CustomSubTabPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSubTabPicker.swift; sourceTree = "<group>"; };
+		B00000082C12D40000000008 /* SpecularTubeOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecularTubeOverlay.swift; sourceTree = "<group>"; };
+		B00000092C12D40000000009 /* PulsingPressureDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingPressureDot.swift; sourceTree = "<group>"; };
+		B000000A2C12D4000000000A /* RadarScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarScannerView.swift; sourceTree = "<group>"; };
+		B000000B2C12D4000000000B /* CleanerMainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerMainTab.swift; sourceTree = "<group>"; };
+		B000000C2C12D4000000000C /* CleanCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCategoryRow.swift; sourceTree = "<group>"; };
+		B000000D2C12D4000000000D /* RAMTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMTab.swift; sourceTree = "<group>"; };
+		B000000E2C12D4000000000E /* LargeFilesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFilesTab.swift; sourceTree = "<group>"; };
+		B000000F2C12D4000000000F /* LargeFileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFileRow.swift; sourceTree = "<group>"; };
+		B00000102C12D40000000010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets.xcassets; sourceTree = "<group>"; };
+		A00000002C12D40000000000 /* HeruTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeruTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000012C12D40000000000 /* HeruToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeruToolsApp.swift; sourceTree = "<group>"; };
+		A00000032C12D40000000002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A00000052C12D40000000004 /* TaskState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskState.swift; sourceTree = "<group>"; };
+		A00000072C12D40000000006 /* DiscordPatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordPatcher.swift; sourceTree = "<group>"; };
+		A00000092C12D40000000008 /* PythonRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonRunner.swift; sourceTree = "<group>"; };
+		A000000B2C12D4000000000A /* SpicetifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicetifyService.swift; sourceTree = "<group>"; };
+		A000000D2C12D4000000000C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		A000000F2C12D4000000000E /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		A00000112C12D40000000010 /* MainPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPopoverView.swift; sourceTree = "<group>"; };
+		A00000132C12D40000000012 /* DiscordFixCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordFixCard.swift; sourceTree = "<group>"; };
+		A00000152C12D40000000014 /* RifeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RifeCard.swift; sourceTree = "<group>"; };
+		A00000172C12D40000000016 /* CompressorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressorCard.swift; sourceTree = "<group>"; };
+		A00000192C12D40000000018 /* SpicetifyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicetifyCard.swift; sourceTree = "<group>"; };
+
+		A00000452C12D40000000045 /* AestheticGroupBoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AestheticGroupBoxStyle.swift; sourceTree = "<group>"; };
+		A00000472C12D40000000047 /* MacCleanerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCleanerService.swift; sourceTree = "<group>"; };
+		A00000492C12D40000000049 /* CleanerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerCard.swift; sourceTree = "<group>"; };
+		A00000202C12D40000000020 /* DiscordPatch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = DiscordPatch.py; sourceTree = "<group>"; };
+		A00000222C12D40000000022 /* RIFEWrapper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = RIFEWrapper.py; sourceTree = "<group>"; };
+		A00000242C12D40000000024 /* FFmpegWrapper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = FFmpegWrapper.py; sourceTree = "<group>"; };
+		A00000262C12D40000000026 /* SpicetifyMgr.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = SpicetifyMgr.py; sourceTree = "<group>"; };
+		A00000302C12D40000000030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000322C12D40000000032 /* HeruTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeruTools.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00001002C12D40000000100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20000012C12D40000000001 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B00000012C12D40000000001 /* Color+Hex.swift */,
+				B00000022C12D40000000002 /* Array+Extend.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B20000022C12D40000000002 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B00000032C12D40000000003 /* CleanerMainVM.swift */,
+				B00000042C12D40000000004 /* RAMTabVM.swift */,
+				B00000052C12D40000000005 /* LargeFilesVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B20000032C12D40000000003 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B00000062C12D40000000006 /* Physical3DButtonStyle.swift */,
+				B00000072C12D40000000007 /* CustomSubTabPicker.swift */,
+				B00000082C12D40000000008 /* SpecularTubeOverlay.swift */,
+				B00000092C12D40000000009 /* PulsingPressureDot.swift */,
+				B000000A2C12D4000000000A /* RadarScannerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B20000042C12D40000000004 /* Cleaner */ = {
+			isa = PBXGroup;
+			children = (
+				B000000B2C12D4000000000B /* CleanerMainTab.swift */,
+				B000000C2C12D4000000000C /* CleanCategoryRow.swift */,
+				B000000D2C12D4000000000D /* RAMTab.swift */,
+				B000000E2C12D4000000000E /* LargeFilesTab.swift */,
+				B000000F2C12D4000000000F /* LargeFileRow.swift */,
+			);
+			path = Cleaner;
+			sourceTree = "<group>";
+		};
+		A00002002C12D40000000200 = {
+			isa = PBXGroup;
+			children = (
+				A00002012C12D40000000201 /* HeruTools */,
+				A00000002C12D40000000000 /* HeruTools.app */,
+			);
+			sourceTree = "<group>";
+		};
+		A00002012C12D40000000201 /* HeruTools */ = {
+			isa = PBXGroup;
+			children = (
+				B20000012C12D40000000001 /* Extensions */,
+				B20000022C12D40000000002 /* ViewModels */,
+				A00000012C12D40000000000 /* HeruToolsApp.swift */,
+				A00003002C12D40000000300 /* Models */,
+				A00004002C12D40000000400 /* Services */,
+				A00005002C12D40000000500 /* Views */,
+				A00006002C12D40000000600 /* Resources */,
+				A00003022C12D40000000302 /* Supporting Files */,
+			);
+			path = HeruTools;
+			sourceTree = "<group>";
+		};
+		A00003002C12D40000000300 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A00000032C12D40000000302 /* AppState.swift */,
+				A00000052C12D40000000304 /* TaskState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A00004002C12D40000000400 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A00000072C12D40000000402 /* DiscordPatcher.swift */,
+				A00000092C12D40000000404 /* PythonRunner.swift */,
+				A000000B2C12D40000000406 /* SpicetifyService.swift */,
+				A000000D2C12D40000000408 /* LoginService.swift */,
+
+				A00000472C12D40000000047 /* MacCleanerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A00005002C12D40000000500 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B20000032C12D40000000003 /* Components */,
+				B20000042C12D40000000004 /* Cleaner */,
+				A000000F2C12D40000000502 /* PopoverViewController.swift */,
+				A00000112C12D40000000504 /* MainPopoverView.swift */,
+				A00000132C12D40000000506 /* DiscordFixCard.swift */,
+				A00000152C12D40000000508 /* RifeCard.swift */,
+				A00000172C12D4000000050A /* CompressorCard.swift */,
+				A00000192C12D4000000050C /* SpicetifyCard.swift */,
+				A00000452C12D40000000045 /* AestheticGroupBoxStyle.swift */,
+
+				A00000492C12D40000000049 /* CleanerCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A00006002C12D40000000600 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B00000102C12D40000000010 /* Assets.xcassets */,
+				A00007002C12D40000000700 /* python */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A00007002C12D40000000700 /* python */ = {
+			isa = PBXGroup;
+			children = (
+				A00000202C12D40000000200 /* DiscordPatch.py */,
+				A00000222C12D40000000202 /* RIFEWrapper.py */,
+				A00000242C12D40000000204 /* FFmpegWrapper.py */,
+				A00000262C12D40000000206 /* SpicetifyMgr.py */,
+			);
+			path = python;
+			sourceTree = "<group>";
+		};
+		A00003022C12D40000000302 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A00000302C12D40000000300 /* Info.plist */,
+				A00000322C12D40000000322 /* HeruTools.entitlements */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00008002C12D40000000800 /* HeruTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00009002C12D40000000900 /* Build configuration list for PBXNativeTarget "HeruTools" */;
+			buildPhases = (
+				A0000A002C12D40000000A00 /* Sources */,
+				A00001002C12D40000000100 /* Frameworks */,
+				A0000B002C12D40000000B00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeruTools;
+			productName = HeruTools;
+			productReference = A00000002C12D40000000000 /* HeruTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0000C002C12D40000000C00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A00008002C12D40000000800 /* HeruTools */ = {
+						CreatedOnToolsVersion = 14.0;
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A0000D002C12D40000000D00 /* Build configuration list for PBXProject "HeruTools" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00002002C12D40000000200;
+			productRefGroup = A00002002C12D40000000200;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00008002C12D40000000800 /* HeruTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0000B002C12D40000000B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000102C12D40000000010 /* Assets.xcassets in Resources */,
+				A00002122C12D40000000212 /* DiscordPatch.py in Resources */,
+				A00002322C12D40000000232 /* RIFEWrapper.py in Resources */,
+				A00002522C12D40000000252 /* FFmpegWrapper.py in Resources */,
+				A00002722C12D40000000272 /* SpicetifyMgr.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0000A002C12D40000000A00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000012C12D40000000001 /* Color+Hex.swift in Sources */,
+				B10000022C12D40000000002 /* Array+Extend.swift in Sources */,
+				B10000032C12D40000000003 /* CleanerMainVM.swift in Sources */,
+				B10000042C12D40000000004 /* RAMTabVM.swift in Sources */,
+				B10000052C12D40000000005 /* LargeFilesVM.swift in Sources */,
+				B10000062C12D40000000006 /* Physical3DButtonStyle.swift in Sources */,
+				B10000072C12D40000000007 /* CustomSubTabPicker.swift in Sources */,
+				B10000082C12D40000000008 /* SpecularTubeOverlay.swift in Sources */,
+				B10000092C12D40000000009 /* PulsingPressureDot.swift in Sources */,
+				B100000A2C12D4000000000A /* RadarScannerView.swift in Sources */,
+				B100000B2C12D4000000000B /* CleanerMainTab.swift in Sources */,
+				B100000C2C12D4000000000C /* CleanCategoryRow.swift in Sources */,
+				B100000D2C12D4000000000D /* RAMTab.swift in Sources */,
+				B100000E2C12D4000000000E /* LargeFilesTab.swift in Sources */,
+				B100000F2C12D4000000000F /* LargeFileRow.swift in Sources */,
+				A00000012C12D40000000001 /* HeruToolsApp.swift in Sources */,
+				A00000032C12D40000000003 /* AppState.swift in Sources */,
+				A00000052C12D40000000005 /* TaskState.swift in Sources */,
+				A00000072C12D40000000007 /* DiscordPatcher.swift in Sources */,
+				A00000092C12D40000000009 /* PythonRunner.swift in Sources */,
+				A000000B2C12D4000000000B /* SpicetifyService.swift in Sources */,
+				A000000D2C12D4000000000D /* LoginService.swift in Sources */,
+				A000000F2C12D4000000000F /* PopoverViewController.swift in Sources */,
+				A00000112C12D40000000011 /* MainPopoverView.swift in Sources */,
+				A00000132C12D40000000013 /* DiscordFixCard.swift in Sources */,
+				A00000152C12D40000000015 /* RifeCard.swift in Sources */,
+				A00000172C12D40000000017 /* CompressorCard.swift in Sources */,
+				A00000192C12D40000000019 /* SpicetifyCard.swift in Sources */,
+
+				A00000442C12D40000000044 /* AestheticGroupBoxStyle.swift in Sources */,
+				A00000462C12D40000000046 /* MacCleanerService.swift in Sources */,
+				A00000482C12D40000000048 /* CleanerCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0000E002C12D40000000E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A0000E012C12D40000000E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A0000F002C12D40000000F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HeruTools/HeruTools.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HeruTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.herucute.HeruTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A0000F012C12D40000000F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HeruTools/HeruTools.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HeruTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.herucute.HeruTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00009002C12D40000000900 /* Build configuration list for PBXNativeTarget "HeruTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000F002C12D40000000F00 /* Debug */,
+				A0000F012C12D40000000F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0000D002C12D40000000D00 /* Build configuration list for PBXProject "HeruTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000E002C12D40000000E00 /* Debug */,
+				A0000E012C12D40000000E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0000C002C12D40000000C00 /* Project object */;
+}
