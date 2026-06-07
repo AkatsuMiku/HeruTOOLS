@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10000122C12D40000000012 /* ffmpeg in Resources */ = {isa = PBXBuildFile; fileRef = B00000122C12D40000000012 /* ffmpeg */; };
+		B10000132C12D40000000013 /* ffprobe in Resources */ = {isa = PBXBuildFile; fileRef = B00000132C12D40000000013 /* ffprobe */; };
 		B10000112C12D40000000011 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000112C12D40000000011 /* DependencyManager.swift */; };
 		B10000012C12D40000000001 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000012C12D40000000001 /* Color+Hex.swift */; };
 		B10000022C12D40000000002 /* Array+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000022C12D40000000002 /* Array+Extend.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B00000122C12D40000000012 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
+		B00000132C12D40000000013 /* ffprobe */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffprobe; sourceTree = "<group>"; };
 		B00000112C12D40000000011 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		B00000012C12D40000000001 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		B00000022C12D40000000002 /* Array+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extend.swift"; sourceTree = "<group>"; };
@@ -102,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B20000052C12D40000000005 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B00000122C12D40000000012 /* ffmpeg */,
+				B00000132C12D40000000013 /* ffprobe */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
 		B20000012C12D40000000001 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +225,7 @@
 		A00006002C12D40000000600 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B20000052C12D40000000005 /* bin */,
 				B00000102C12D40000000010 /* Assets.xcassets */,
 				A00007002C12D40000000700 /* python */,
 			);
@@ -298,6 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10000122C12D40000000012 /* ffmpeg in Resources */,
+				B10000132C12D40000000013 /* ffprobe in Resources */,
 				B10000102C12D40000000010 /* Assets.xcassets in Resources */,
 				A00002122C12D40000000212 /* DiscordPatch.py in Resources */,
 				A00002322C12D40000000232 /* RIFEWrapper.py in Resources */,

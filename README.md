@@ -68,9 +68,10 @@ mkdir -p build/HeruTools.app/Contents/MacOS build/HeruTools.app/Contents/Resourc
 SDK_PATH=$(xcrun --sdk macosx --show-sdk-path)
 find HeruTools -name "*.swift" | xargs swiftc -sdk "$SDK_PATH" -parse-as-library -target x86_64-apple-macosx13.0 -O -module-name HeruTools -o build/HeruTools.app/Contents/MacOS/HeruTools
 
-# Copy Info.plist and python assets
+# Copy Info.plist and resources
 cp HeruTools/Info.plist build/HeruTools.app/Contents/Info.plist
 cp -R HeruTools/Resources/python build/HeruTools.app/Contents/Resources/
+cp -R HeruTools/Resources/bin build/HeruTools.app/Contents/Resources/
 
 # Clean extended attributes and sign
 xattr -cr build/HeruTools.app
