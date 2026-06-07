@@ -28,6 +28,11 @@ def find_ffmpeg():
     if os.path.exists(alt_bundled):
         return alt_bundled
 
+    # Check Application Support bin folder
+    app_support = os.path.expanduser("~/Library/Application Support/HeruTools/bin/ffmpeg")
+    if os.path.exists(app_support):
+        return app_support
+
     # 2. Fallback to standard system paths
     paths = [
         "/usr/local/bin/ffmpeg",
@@ -54,6 +59,11 @@ def find_ffprobe():
     if os.path.exists(alt_bundled):
         return alt_bundled
 
+    # Check Application Support bin folder
+    app_support = os.path.expanduser("~/Library/Application Support/HeruTools/bin/ffprobe")
+    if os.path.exists(app_support):
+        return app_support
+
     # 2. Fallback to standard system paths
     paths = [
         "/usr/local/bin/ffprobe",
@@ -68,6 +78,7 @@ def find_ffprobe():
         except Exception:
             continue
     return None
+
 
 def get_video_info(ffprobe_path, input_path):
     try:

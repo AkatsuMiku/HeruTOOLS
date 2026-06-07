@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MainPopoverView: View {
     @ObservedObject var state = AppState.shared
+    @ObservedObject var dependencyManager = DependencyManager.shared
     @State private var selectedTab = 0
     
     var body: some View {
@@ -101,6 +102,57 @@ struct MainPopoverView: View {
             .background(Color.clear)
             
             Divider()
+            
+            if !dependencyManager.isInstalled {
+                VStack(spacing: 8) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "exclamationmark.triangle.fill")
+                            .foregroundColor(.orange)
+                            .font(.system(size: 14))
+                        
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text("Missing Media Engine")
+                                .font(.system(size: 11, weight: .bold, design: .rounded))
+                                .foregroundColor(.white)
+                            Text(dependencyManager.isDownloading ? dependencyManager.statusMessage : "RIFE & Compression require FFmpeg core.")
+                                .font(.system(size: 9))
+                                .foregroundColor(.white.opacity(0.7))
+                        }
+                        
+                        Spacer()
+                        
+                        if dependencyManager.isDownloading {
+                            ProgressView(value: dependencyManager.downloadProgress)
+                                .progressViewStyle(.linear)
+                                .frame(width: 80)
+                        } else {
+                            Button(action: {
+                                Task {
+                                    await dependencyManager.downloadDependencies()
+                                }
+                            }) {
+                                Text("Auto Install")
+                                    .font(.system(size: 9, weight: .bold, design: .rounded))
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal, 8)
+                                    .padding(.vertical, 4)
+                                    .background(Color.blue)
+                                    .cornerRadius(4)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                    .padding(10)
+                    .background(Color.black.opacity(0.35))
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.orange.opacity(0.25), lineWidth: 1)
+                    )
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+                }
+            }
             
             // Active Tab View container (floating cards sit here)
             ScrollView(.vertical, showsIndicators: false) {

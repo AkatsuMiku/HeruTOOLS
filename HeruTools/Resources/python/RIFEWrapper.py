@@ -27,6 +27,10 @@ def find_ffmpeg():
         p = os.path.abspath(os.path.join(script_dir, rel))
         if os.path.exists(p):
             return p
+    # Check Application Support bin folder
+    app_support = os.path.expanduser("~/Library/Application Support/HeruTools/bin/ffmpeg")
+    if os.path.exists(app_support):
+        return app_support
     for p in ["/usr/local/bin/ffmpeg", "/opt/homebrew/bin/ffmpeg", "/usr/bin/ffmpeg", "ffmpeg"]:
         try:
             subprocess.run([p, "-version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -41,6 +45,10 @@ def find_ffprobe():
         p = os.path.abspath(os.path.join(script_dir, rel))
         if os.path.exists(p):
             return p
+    # Check Application Support bin folder
+    app_support = os.path.expanduser("~/Library/Application Support/HeruTools/bin/ffprobe")
+    if os.path.exists(app_support):
+        return app_support
     for p in ["/usr/local/bin/ffprobe", "/opt/homebrew/bin/ffprobe", "/usr/bin/ffprobe", "ffprobe"]:
         try:
             subprocess.run([p, "-version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -48,6 +56,7 @@ def find_ffprobe():
         except Exception:
             continue
     return None
+
 
 def get_video_info(ffprobe_path, input_path):
     """Returns (fps, duration, width, height, codec_name)"""

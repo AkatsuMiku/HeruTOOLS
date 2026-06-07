@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10000112C12D40000000011 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000112C12D40000000011 /* DependencyManager.swift */; };
 		B10000012C12D40000000001 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000012C12D40000000001 /* Color+Hex.swift */; };
 		B10000022C12D40000000002 /* Array+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000022C12D40000000002 /* Array+Extend.swift */; };
 		B10000032C12D40000000003 /* CleanerMainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000032C12D40000000003 /* CleanerMainVM.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B00000112C12D40000000011 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		B00000012C12D40000000001 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		B00000022C12D40000000002 /* Array+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extend.swift"; sourceTree = "<group>"; };
 		B00000032C12D40000000003 /* CleanerMainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerMainVM.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		A00004002C12D40000000400 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B00000112C12D40000000011 /* DependencyManager.swift */,
 				A00000072C12D40000000402 /* DiscordPatcher.swift */,
 				A00000092C12D40000000404 /* PythonRunner.swift */,
 				A000000B2C12D40000000406 /* SpicetifyService.swift */,
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10000112C12D40000000011 /* DependencyManager.swift in Sources */,
 				B10000012C12D40000000001 /* Color+Hex.swift in Sources */,
 				B10000022C12D40000000002 /* Array+Extend.swift in Sources */,
 				B10000032C12D40000000003 /* CleanerMainVM.swift in Sources */,
